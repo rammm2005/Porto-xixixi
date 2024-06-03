@@ -22,6 +22,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      lineHeight: {
+        '11': '2.5rem',
+        '12': '3rem',
+        '13': '3.5rem',
+        '14': '4rem',
+      },
+      colors: {
+        purpleDark: "#640D6B",
+        blueLight: "#008DDA",
+        purpleLight: "#B51B75",
+        blue: "#050C9C",
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         first: "moveVertical 30s ease infinite",

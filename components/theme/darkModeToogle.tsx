@@ -80,7 +80,9 @@ export function DarkMode() {
                         startContent={<ImSun className={iconClasses} />}
                         onClick={() => handleThemeChange('light')}
                     >
-                        Light Mode
+                        <span className="dark:text-white text-slate-900">
+                            Light Mode
+                        </span>
                     </DropdownItem>
                     <DropdownItem
                         key="copy"
@@ -89,7 +91,9 @@ export function DarkMode() {
                         startContent={<BsMoonStars className={iconClasses} />}
                         onClick={() => handleThemeChange('dark')}
                     >
-                        Dark Theme
+                        <span className="dark:text-white text-slate-900">
+                            Dark Theme
+                        </span>
                     </DropdownItem>
                 </DropdownSection>
                 <DropdownSection title="Default Theme">

@@ -5,13 +5,20 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../../components/ui3DCard"
 import Link from "next/link";
 import { HeroHighlight } from "../../components/ui/SpotLight";
+import HeroSection from "../../components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
     // <div>
-      <HeroHighlight>
+    <HeroHighlight className="w-full py-4 px-4 md:px-20">
+      <div className="mt-2 z-1 w-full">
 
-        <CardContainer className="inter-var mt-7 z-10">
+        <div className="flex">
+          <HeroSection />
+        </div>
+
+
+        {/* <CardContainer className="inter-var">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <CardItem
               translateZ="50"
@@ -39,7 +46,7 @@ export default function Home() {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="#"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
               >
@@ -54,8 +61,11 @@ export default function Home() {
               </CardItem>
             </div>
           </CardBody>
-        </CardContainer>
-      </HeroHighlight>
+        </CardContainer> */}
+      </div>
+
+
+    </HeroHighlight>
 
     // </div>
 
